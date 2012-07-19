@@ -110,6 +110,9 @@ class ApiClient:
         # print obj, objClass
 
         if type(objClass) == str:
+            if objClass == 'json':
+                return obj
+
             if 'list[' in objClass:
                 match = re.match('list\[(.*)\]', objClass)
                 subClass = match.group(1)
