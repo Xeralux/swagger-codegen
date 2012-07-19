@@ -64,7 +64,7 @@ class ApiClient:
                         data = json.dumps([datum.__dict__ for datum in postData])
                 elif type(postData) not in safeToDump:
                     data = json.dumps(postData.__dict__)
-        else:
+        elif method != 'GET':
             raise Exception('Method ' + method + ' is not recognized.')
 
         request = MethodRequest(method=method, url=url, headers=headers, data=data)
