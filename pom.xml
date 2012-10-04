@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.wordnik</groupId>
-	<artifactId>swagger-codegen_2.9.1</artifactId>
+	<artifactId>swagger-codegen_2.9.2</artifactId>
 	<packaging>jar</packaging>
 	<name>swagger-codegen</name>
 	<version>2.0.0-SNAPSHOT</version>
@@ -14,6 +14,14 @@
 	<prerequisites>
 		<maven>2.2.0</maven>
 	</prerequisites>
+
+<distributionManagement>
+    <snapshotRepository>
+        <id>xeralux</id>
+        <name>xeralux-snapshots</name>
+        <url>http://xeralux.artifactoryonline.com/xeralux/libs-snapshots-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
 	<pluginRepositories>
 		<pluginRepository>
@@ -164,7 +172,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.wordnik</groupId>
-			<artifactId>swagger-core_2.9.1</artifactId>
+			<artifactId>swagger-core_2.9.2</artifactId>
 			<version>${swagger-core-version}</version>
 			<scope>compile</scope>
 		</dependency>
@@ -192,7 +200,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.scalatest</groupId>
-			<artifactId>scalatest_2.9.1</artifactId>
+			<artifactId>scalatest_2.9.2</artifactId>
 			<version>${scala-test-version}</version>
 			<scope>test</scope>
 		</dependency>
@@ -209,6 +217,7 @@
 			<name>Scala-Tools Maven2 Repository</name>
 			<url>http://scala-tools.org/repo-releases</url>
 		</repository>
+<!--
 		<repository>
 			<id>wordnik-ci-aws</id>
 			<url>https://ci.aws.wordnik.com/artifactory/libs-snapshots/</url>
@@ -221,10 +230,11 @@
 			<id>wordnik-ci-aws-remote</id>
 			<url>https://ci.aws.wordnik.com/artifactory/remote-repos/</url>
 		</repository>
+-->
 	</repositories>
 	<properties>
-		<swagger-core-version>1.02-SNAPSHOT</swagger-core-version>
-		<scala-version>2.9.1-1</scala-version>
+		<swagger-core-version>1.1-SNAPSHOT</swagger-core-version>
+		<scala-version>2.9.2</scala-version>
 		<junit-version>4.8.1</junit-version>
 		<maven-plugin.version>1.0.0</maven-plugin.version>
 		<scala-test-version>1.6.1</scala-test-version>
