@@ -9,9 +9,21 @@ version.properties
 lib/*
 build/*
 generated-files/*
+generated-code/*
 *.swp
 *.swo
 
 /target
 /generated-files
 /nbactions.xml
+*.pyc
+__pycache__
+samples/server-generator/scalatra/output
+samples/server-generator/node/output/node_modules
+samples/server-generator/scalatra/target
+samples/server-generator/scalatra/output/.history
+
+target
+.idea
+.lib
+atlassian-ide-plugin.xml
